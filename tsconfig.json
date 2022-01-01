@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "removeComments": true,
+      "allowJs": true,
+      "outDir": "src/out",
+      "jsx": "react"
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "src/demo.js",
+      "src/out"
+    ]
+  }
+  
