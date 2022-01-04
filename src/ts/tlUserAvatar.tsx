@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Assets } from './tlData';
 
 export interface IUserData {
     name: string;
@@ -6,7 +7,7 @@ export interface IUserData {
 }
 
 interface IProps {
-
+    username: string;
 }
 
 export default class Comment_UserInfo extends React.Component <IProps> {
@@ -16,7 +17,9 @@ export default class Comment_UserInfo extends React.Component <IProps> {
 
     render () {
         return (
-            <p></p>
+            <div className='user-avatar-container'>
+                <img src={Assets.users[this.props.username].url} alt='pfp' className='user-avatar'/>
+            </div>
         );
     }
 }

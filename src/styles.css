@@ -1,0 +1,48 @@
+.timeline-container {
+    width: 70vw;
+    margin: 0 auto -1em auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.timeline-item {
+    border: .3em solid #AF218E;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.comment-container {
+
+}
+
+.comment {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.comment-detail {
+
+}
+
+.comment-name {
+
+}
+
+.comment-body {
+
+}
+
+.user-avatar-container {
+
+}
+
+.user-avatar {
+
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}

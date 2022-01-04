@@ -19,7 +19,7 @@ export default class TimelineItem extends React.Component <IProps> {
 
 	render () {
 		return (
-			<div>
+			<div className='timeline-item'>
 				<TimelineItem_Content data={this.props.data.content}/>
 				<TimelineItem_Comments data={this.props.data.comments}/>
 			</div>

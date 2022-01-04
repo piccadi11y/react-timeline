@@ -8,15 +8,15 @@ const testd = {
 const testc = {
     temp: 'test comment string',
     comments: [
-        { username: 'jimbob5', commentBody: 'test comment string 2' },
-        { username: 'jimbob5', commentBody: 'test comment 2 string' }
+        { username: 'jimbob5', commentBody: 'test comment string 2', commentDate: new Date() },
+        { username: 'jimbob5', commentBody: 'test comment 2 string', commentDate: new Date() }
     ]
 };
 var Assets;
 (function (Assets) {
     Assets.users = {
-        'jimbob5': { name: 'Jimmy Claus', url: '../../assets/truck.jpg' },
-        'SallyCat92': { name: 'Sally Baker', url: '../../assets/cheese.jpg' },
+        'jimbob5': { name: 'Jimmy Claus', url: './assets/truck.jpg' },
+        'SallyCat92': { name: 'Sally Baker', url: './assets/cheese.jpg' },
     };
     let usernames;
     (function (usernames) {
@@ -40,8 +40,8 @@ var Assets;
             comments: {
                 temp: '',
                 comments: [
-                    { username: usernames.JIMBOB5, commentBody: 'boooo' },
-                    { username: usernames.SALLYCAT92, commentBody: 'tasty!' }
+                    { username: usernames.JIMBOB5, commentBody: 'boooo', commentDate: new Date(2021, 12, 23, 9, 52, 53) },
+                    { username: usernames.SALLYCAT92, commentBody: 'tasty!', commentDate: new Date(2021, 12, 23, 14, 12, 35) }
                 ]
             }
         }

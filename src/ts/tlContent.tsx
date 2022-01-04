@@ -16,7 +16,7 @@ export default class TimelineItem_Content extends React.Component <IProps> {
 
     render () {
         return (
-            <div>
+            <div className='content-container'>
                 <h1>{this.props.data.title}</h1>
             </div>
         );

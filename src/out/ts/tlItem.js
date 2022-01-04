@@ -9,7 +9,7 @@ class TimelineItem extends React.Component {
         super(props);
     }
     render() {
-        return (React.createElement("div", null,
+        return (React.createElement("div", { className: 'timeline-item' },
             React.createElement(tlContent_1.default, { data: this.props.data.content }),
             React.createElement(tlComments_1.default, { data: this.props.data.comments })));
     }

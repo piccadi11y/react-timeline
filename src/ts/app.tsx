@@ -8,7 +8,7 @@ interface IProps {
 
 const App: React.FC <IProps> = (props: IProps) => {
 	return (
-		<div>{Assets.data.map(v => <TimelineItem data={v} />)}</div>
+		<div className='timeline-container'>{Assets.data.map(v => <TimelineItem data={v} />)}</div>
 	);
 }
 

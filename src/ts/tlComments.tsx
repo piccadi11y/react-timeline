@@ -19,7 +19,7 @@ export default class TimelineItem_Comments extends React.Component <IProps> {
         return (
             // <p>{this.props.data.temp}</p>
             // <TimelineComment data={this.props.data.comments}/>
-            <div>{this.props.data.comments.map(v => <TimelineComment data={v} />)}</div>
+            <div className='comment-container'>{this.props.data.comments.map(v => <TimelineComment data={v} />)}</div>
         );
     }
 }
