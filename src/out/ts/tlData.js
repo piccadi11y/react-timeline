@@ -3,7 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Assets = void 0;
 const testd = {
     title: 'This is an announcement',
-    blurb: 'and this is a little bit of detail about the announcement'
+    blurb: 'and this is a little bit of detail about the announcement',
+    imgURL: './assets/announcement.jpg',
+    url: '',
+    date: new Date()
 };
 const testc = {
     temp: 'test comment string',
@@ -35,7 +38,10 @@ var Assets;
         {
             content: {
                 title: 'Chips are back in!',
-                blurb: 'The old trend taking 2022 by storm'
+                blurb: 'The old trend taking 2022 by storm',
+                imgURL: './assets/chips.jpg',
+                url: '',
+                date: new Date(2021, 11, 22, 12, 15, 22)
             },
             comments: {
                 temp: '',

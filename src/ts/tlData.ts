@@ -6,7 +6,10 @@ import { IUserData } from "./tlUserAvatar";
 
 const testd: TimelineItem_ContentData = {
     title: 'This is an announcement',
-    blurb: 'and this is a little bit of detail about the announcement'
+    blurb: 'and this is a little bit of detail about the announcement',
+    imgURL: './assets/announcement.jpg',     // https://www.zola.com/expert-advice/how-to-announce-your-engagement
+    url: '',
+    date: new Date()
 }
 
 const testc: TimelineItem_CommentData = {
@@ -41,7 +44,10 @@ export namespace Assets {
         {
             content: {
                 title: 'Chips are back in!',
-                blurb: 'The old trend taking 2022 by storm'
+                blurb: 'The old trend taking 2022 by storm',
+                imgURL: './assets/chips.jpg',     // https://www.independent.co.uk/news/health/eating-chips-twice-week-death-double-chance-risk-health-diet-carbohydrates-deep-fry-a7790996.html
+                url: '',
+                date: new Date(2021, 11, 22, 12, 15, 22)
             },
             comments: {
                 temp: '',

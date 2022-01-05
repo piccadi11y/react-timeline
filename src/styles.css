@@ -11,6 +11,28 @@
     margin-bottom: 1em;
 }
 
+.content-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.content-title {
+
+}
+
+.content-link {
+    width: 90%;
+}
+
+.content-img {
+    width: 100%;
+}
+
+.content-blurb {
+
+}
+
 .comment-container {
 
 }

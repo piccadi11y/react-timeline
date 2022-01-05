@@ -42,7 +42,6 @@ export default class TimelineComment extends React.Component <IProps> {
             <div className='comment'>
                 <Comment_UserInfo username={this.props.data.username}/>
                 <div className='comment-detail'>
-                    {/* <p className='comment-name'>{Assets.users[this.props.data.username].name} - {date.toLocaleDateString()} | {date.toString()}</p> */}
                     <p className='comment-name'>{Assets.users[this.props.data.username].name} - {dateToDisplay}</p>
                     <p className='comment-body'>{this.props.data.commentBody}</p>
                 </div>
