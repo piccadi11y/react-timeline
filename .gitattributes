@@ -1,1 +1,2 @@
 src/*.js linguist-generated
+src/out/*/*.js linguist-generated

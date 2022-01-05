@@ -46,8 +46,8 @@ export namespace Assets {
             comments: {
                 temp: '',
                 comments: [
-                    {username: usernames.JIMBOB5, commentBody: 'boooo', commentDate: new Date(2021, 12, 23, 9, 52, 53)},
-                    {username: usernames.SALLYCAT92, commentBody: 'tasty!', commentDate: new Date(2021, 12, 23, 14, 12, 35)}
+                    {username: usernames.JIMBOB5, commentBody: 'boooo', commentDate: new Date(2021, 11, 23, 9, 52, 53)},
+                    {username: usernames.SALLYCAT92, commentBody: 'tasty!', commentDate: new Date(2021, 11, 30, 14, 12, 35)}
                 ]
             }
         }
