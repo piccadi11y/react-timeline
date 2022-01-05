@@ -9,7 +9,7 @@ const DAYS_OF_WEEK = [
     'Mon',
     'Tue',
     'Wed',
-    'Thu',
+    'Thur',
     'Fri',
     'Sat'
 ];
@@ -22,7 +22,7 @@ class TimelineComment extends React.Component {
         let now = new Date();
         let dateToDisplay;
         if (date.toLocaleDateString() === now.toLocaleDateString())
-            dateToDisplay = `${date.getHours()}${date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()}h`;
+            dateToDisplay = `${date.getHours() < 10 ? '0' + date.getHours() : date.getHours()}${date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()}h`;
         else if (date.getTime() >= now.getTime() - MS_IN_DAY * 7)
             dateToDisplay = DAYS_OF_WEEK[date.getDay()];
         else
@@ -30,6 +30,7 @@ class TimelineComment extends React.Component {
         return (React.createElement("div", { className: 'comment' },
             React.createElement(tlUserAvatar_1.default, { username: this.props.data.username }),
             React.createElement("div", { className: 'comment-detail' },
+                React.createElement("div", { className: 'comment-detail-bg' }),
                 React.createElement("p", { className: 'comment-name' },
                     tlData_1.Assets.users[this.props.data.username].name,
                     " - ",

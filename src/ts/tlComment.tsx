@@ -8,7 +8,7 @@ const DAYS_OF_WEEK: string[] = [
     'Mon',
     'Tue',
     'Wed',
-    'Thu',
+    'Thur',
     'Fri',
     'Sat'
 ]
@@ -34,7 +34,7 @@ export default class TimelineComment extends React.Component <IProps> {
         let now: Date = new Date();
         let dateToDisplay: string;
 
-        if (date.toLocaleDateString() === now.toLocaleDateString()) dateToDisplay = `${date.getHours()}${date.getMinutes()<10?'0'+date.getMinutes():date.getMinutes()}h`;
+        if (date.toLocaleDateString() === now.toLocaleDateString()) dateToDisplay = `${date.getHours()<10?'0'+date.getHours():date.getHours()}${date.getMinutes()<10?'0'+date.getMinutes():date.getMinutes()}h`;
         else if (date.getTime() >= now.getTime() - MS_IN_DAY * 7) dateToDisplay = DAYS_OF_WEEK[date.getDay()];
         else dateToDisplay = date.toLocaleDateString();
 
@@ -42,6 +42,7 @@ export default class TimelineComment extends React.Component <IProps> {
             <div className='comment'>
                 <Comment_UserInfo username={this.props.data.username}/>
                 <div className='comment-detail'>
+                    <div className='comment-detail-bg'></div>
                     <p className='comment-name'>{Assets.users[this.props.data.username].name} - {dateToDisplay}</p>
                     <p className='comment-body'>{this.props.data.commentBody}</p>
                 </div>
