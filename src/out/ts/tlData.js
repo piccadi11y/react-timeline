@@ -20,6 +20,7 @@ var Assets;
     Assets.users = {
         'jimbob5': { name: 'Jimmy Claus', url: './assets/truck.jpg' },
         'SallyCat92': { name: 'Sally Baker', url: './assets/cheese.jpg' },
+        'root': { name: 'Me', url: './assets/cat.jpg' }
     };
     let usernames;
     (function (usernames) {

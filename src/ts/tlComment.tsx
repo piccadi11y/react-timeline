@@ -32,10 +32,12 @@ export default class TimelineComment extends React.Component <IProps> {
         // return <p>{Assets.users[this.props.data.username].name}: {this.props.data.commentBody}</p>
         let date: Date = this.props.data.commentDate;
         let now: Date = new Date();
+        let today: Date = now;
+        today.setHours(0,0,0,1);
         let dateToDisplay: string;
 
         if (date.toLocaleDateString() === now.toLocaleDateString()) dateToDisplay = `${date.getHours()<10?'0'+date.getHours():date.getHours()}${date.getMinutes()<10?'0'+date.getMinutes():date.getMinutes()}h`;
-        else if (date.getTime() >= now.getTime() - MS_IN_DAY * 7) dateToDisplay = DAYS_OF_WEEK[date.getDay()];
+        else if (date.getTime() >= today.getTime() - MS_IN_DAY * 6) dateToDisplay = DAYS_OF_WEEK[date.getDay()];
         else dateToDisplay = date.toLocaleDateString();
 
         return(

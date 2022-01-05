@@ -25,6 +25,7 @@ export namespace Assets {
     export const users: {[key: string]: IUserData} = {
         'jimbob5': {name: 'Jimmy Claus', url: './assets/truck.jpg'},       // src: https://www.newyorker.com/news/letter-from-the-southwest/old-trucks-for-new-money
         'SallyCat92': {name: 'Sally Baker', url: './assets/cheese.jpg'},    // src: https://www.hsph.harvard.edu/nutritionsource/cheese/
+        'root': {name: 'Me', url: './assets/cat.jpg'}
     }
     
     export enum usernames {
