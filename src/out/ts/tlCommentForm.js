@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
+const tlUserAvatar_1 = require("./tlUserAvatar");
 class Comment_Form extends React.Component {
     constructor(props) {
         super(props);
@@ -12,13 +13,16 @@ class Comment_Form extends React.Component {
         this.setState({ txtInput: e.target.value });
     }
     handleClick(e) {
-        this.props.handleClick('root', this.state.txtInput);
-        this.setState({ txtInput: '' });
+        if (this.state.txtInput !== '') {
+            this.props.handleClick('root', this.state.txtInput);
+            this.setState({ txtInput: '' });
+        }
     }
     render() {
         return (React.createElement("div", { className: 'comment-form' },
-            React.createElement("textarea", { value: this.state.txtInput, onChange: this.handleChange }),
-            React.createElement("input", { type: 'button', value: '->', onClick: this.handleClick })));
+            React.createElement(tlUserAvatar_1.default, { username: 'root' }),
+            React.createElement("textarea", { placeholder: 'Have your say!', value: this.state.txtInput, onChange: this.handleChange }),
+            React.createElement("button", { onClick: this.handleClick })));
     }
 }
 exports.default = Comment_Form;

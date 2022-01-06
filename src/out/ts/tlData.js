@@ -33,10 +33,6 @@ var Assets;
             comments: testc
         },
         {
-            content: testd,
-            comments: testc
-        },
-        {
             content: {
                 title: 'Chips are back in!',
                 blurb: 'The old trend taking 2022 by storm',

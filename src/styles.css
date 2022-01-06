@@ -31,7 +31,11 @@
 }
 
 .content-blurb {
+    margin: 1em 0 0 0;
+}
 
+.content-date {
+    margin: 1em 0 2em 0;
 }
 
 .comment-container {
@@ -81,12 +85,40 @@
 
 .comment-form {
     margin: 0 3em 1em 3em;
+    padding: 1em 0;
     border-radius: 1em;
     background-color: #AA7DA1CC;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
 }
 
-.comment-form p {
-    margin: 0;
+.comment-form textarea {
+    outline: none;
+    resize: none;
+    overflow: auto;
+    border: none;
+    background-color: #1F081CAA;
+    padding: .5em;
+    border-radius: 1em;
+    color: #8D98B4;
+    flex: 1;
+}
+
+.comment-form button {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: .2em solid #1F081C;
+    position: relative;
+    margin: 0 1em 0 .9em;
+    /* font-size: 2em; */
+    background-color: #1F081C69;
+    background-image: url('../assets/rightArrow.png');
+    background-position: center;
+    background-size: cover;
+    /* color: #8D98B4; */
+    cursor: pointer;
 }
 
 .user-avatar-container {
