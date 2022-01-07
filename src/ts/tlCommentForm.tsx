@@ -35,9 +35,6 @@ export default class Comment_Form extends React.Component <IProps, IState> {
             <div className='comment-form'>
                 <Comment_UserInfo username='root'/>
                 <textarea placeholder='Have your say!' value={this.state.txtInput} onChange={this.handleChange} />
-                {/* <input type='button' value='->' onClick={this.handleClick} /> */}
-                {/* <button onClick={this.handleClick}>{'->'}</button> */}
-                {/* <button onClick={this.handleClick}>{'\u2192'}</button> */}
                 <button onClick={this.handleClick}></button>
             </div>
         );

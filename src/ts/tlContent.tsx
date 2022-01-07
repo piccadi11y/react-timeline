@@ -21,7 +21,7 @@ export default class TimelineItem_Content extends React.Component <IProps> {
         return (
             <div className='content-container'>
                 <h1 className='content-title'>{this.props.data.title}</h1>
-                <a className='content-link' href={this.props.data.url}>
+                <a className='content-link' href={this.props.data.url} target='_blank'>
                     <img className='content-img' src={this.props.data.imgURL} />
                 </a>
                 <h3 className='content-blurb'>{this.props.data.blurb}</h3>

@@ -29,7 +29,6 @@ export default class TimelineComment extends React.Component <IProps> {
     }
 
     render () {
-        // return <p>{Assets.users[this.props.data.username].name}: {this.props.data.commentBody}</p>
         let date: Date = this.props.data.commentDate;
         let now: Date = new Date();
         let today: Date = now;

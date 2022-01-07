@@ -33,8 +33,6 @@ export default class TimelineItem_Comments extends React.Component <IProps, ISta
     render () {
             let comments: ICommentData[] = this.props.data.comments.concat(this.state.userComments);
         return (
-            // <p>{this.props.data.temp}</p>
-            // <TimelineComment data={this.props.data.comments}/>
             <div>
                 <div className='comment-container'>
                     {comments.map(v => <TimelineComment data={v} />)}
