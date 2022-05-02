@@ -141,3 +141,60 @@
     top: 0.6em;
     left: 0.6em;
 }
+
+@media screen and (max-width: 440px) {
+    html {
+        /* font-size: .8em; */
+    }
+
+    .timeline-container {
+        width: 95vw;
+    }
+
+    .content-title {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .content-link {
+        width: 85%;
+    }
+
+    .content-blurb {
+        text-align: center;
+        font-size: 1.1em;
+    }
+    /* some idiot forgot to set the font-size for the normal/desktop view so when I change the mobile view relative to that it just accepts that as the hard value, based off of an original font size of 12px... */
+
+    .comment-container {
+        margin: 1em;
+    }
+
+    .comment-name {
+        font-size: 0.8em;
+    }
+
+    .comment-body {
+        font-size: 1em;
+    }
+
+    .user-avatar-container {
+        margin: 0 0.5em;
+
+        min-width: 3.8em;
+        max-width: 3.8em;
+        height: 3.8em;
+    }
+
+    .user-avatar {
+        width: 3.2em;
+        height: 3.2em;
+
+        top: 0.3em;
+        left: 0.3em;
+    }
+
+    .comment-form {
+        margin: 1em;
+    }
+}
