@@ -3,7 +3,7 @@
 A timeline demo application built with Typescript utilising the ReactJS library.
 
 ### Live version
-A live version of the demo will be available [here](https://piccadi11y.com/Programming/React/timeline/index.html) on my website.
+A live version of the demo will be available [here](https://old.piccadi11y.com/Programming/React/timeline/index.html) on my website.
 
 ### Dependencies
 @types/react: ^17.0.38  
